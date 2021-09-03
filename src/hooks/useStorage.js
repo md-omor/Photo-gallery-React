@@ -30,7 +30,11 @@
 // export default useStorage;
 
 import { useEffect, useState } from "react";
-import { projectFirestore, projectStorage } from "../firebase/config";
+import {
+  projectFirestore,
+  projectStorage,
+  timestamp,
+} from "../firebase/config";
 
 const useStorage = (file) => {
   const [progress, setProgress] = useState(0);
@@ -53,8 +57,8 @@ const useStorage = (file) => {
       },
       async () => {
         const url = await storageRef.getDownloadURL();
-        // const createdAt = timestamp();
-        // await collectionRef.add({ url, createdAt });
+        const createdAt = timestamp();
+        await collectionRef.add({ url, createdAt });
         setUrl(url);
       }
     );
