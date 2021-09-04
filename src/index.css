@@ -6,8 +6,8 @@
 }
 
 :root {
-  --primary: #efb6b2;
-  --secondary: #4e4e4e;
+  --primary: #dde4f9fc;
+  --secondary: #ccc9fbe5;
   --error: #ff4a4a;
 }
 
@@ -15,6 +15,7 @@
 body {
   font-family: "Noto Serif";
   color: var(--secondary);
+  background-color: #2e314afa;
 }
 .App {
   max-width: 1170px;
@@ -25,10 +26,12 @@ body {
   font-size: 1.2rem;
   letter-spacing: 2px;
   font-weight: normal;
+  cursor: pointer;
 }
 .title h2,
 .title p {
   text-align: center;
+  color: #dde4f9fc;
 }
 .title h2 {
   margin-top: 60px;
@@ -56,10 +59,11 @@ label {
   color: var(--primary);
   font-weight: bold;
   font-size: 24px;
+  cursor: pointer;
 }
 label:hover {
   background: var(--primary);
-  color: white;
+  color: #4e4e4e;
 }
 .output {
   height: 60px;
@@ -90,6 +94,8 @@ label:hover {
   /* padding controls height, will always be perfectly square regardless of width */
   position: relative;
   opacity: 0.8;
+  cursor: pointer;
+  width: 100%;
 }
 .img-wrap img {
   min-width: 100%;
@@ -98,6 +104,8 @@ label:hover {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* modal styles */
