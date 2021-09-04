@@ -4,7 +4,7 @@
 
 ## Live demo : [Photo Gallery App](https://mdomor.netlify.app/)
 
-![multi step form](omorgram.png)
+![multi step form](omor.png)
 
 [![Facebook Badge](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/mdomorrr)
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mdomor)
